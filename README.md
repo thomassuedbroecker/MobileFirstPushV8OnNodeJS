@@ -7,7 +7,7 @@ To show all the dependencies I created a CF Node.js Application on Bluemix and a
 MobileFirst Server I use the MobileFoundation Service on Bluemix.
 
 To get more details on the Topic on MobileFirstFoundation Push Topic, please take a
-look in the offical documentation or other resources like mfp.help.
+look in the Offical documentation https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or other resources like mfp.help.
 
 ## Run the app locally
 
