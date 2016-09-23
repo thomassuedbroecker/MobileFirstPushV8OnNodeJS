@@ -26,14 +26,14 @@ module.exports = function (theMFPGetPushTokenScopeData,
   // 7-do the post and write the Data
   */
   this.sendPush = function ( appname, host, port, user, password, notificationMessage, callback){
-      console.log('---> getMFPPushToken');
+      console.log('\n\n---> getMFPPushToken');
       var theAppname = appname;
       var theResult = false;
-      console.log('---> getMFPPushToken -> theAppname: %s', theAppname );
+      console.log('\n\n---> getMFPPushToken -> theAppname: %s', theAppname );
 
       var http = require('http');
       var theHost = host;
-      console.log('---> getMFPPushToken -> theHost: %s', theHost );
+      console.log('\n\n---> getMFPPushToken -> theHost: %s', theHost );
 
       // http://www.ibm.com/support/knowledgecenter/SSHSCD_8.0.0/com.ibm.worklight.dev.doc/dev/c_non_mobile_to_mobile_services.html#non_mobile_mobile_services
       // testClient:testSecret
@@ -69,19 +69,19 @@ module.exports = function (theMFPGetPushTokenScopeData,
        method : theMethode,
        headers : postheaders
      };
-     console.log('---> getMFPPushToken -> Options prepared: %s', JSON.stringify(optionspost));
+     console.log('\n\n---> getMFPPushToken -> Options prepared: %s', JSON.stringify(optionspost));
 
      // prepare the POST call using https or http
      var reqPost = http.request(optionspost, function(res) {
-         console.log("---> getMFPPushToken -> statusCode:  %s ", res.statusCode);
+         console.log("\n\n---> 1 getMFPPushToken -> statusCode:  %s ", res.statusCode);
          // uncomment it for header details
-         console.log("---> getMFPPushToken -> headers: ", res.headers);
+         console.log("\n\n---> 1 getMFPPushToken -> headers: ", res.headers);
 
          res.on('data', function(d) {
-             console.info('---> getMFPPushToken -> POST result:\n');
+             console.info('---> 2 getMFPPushToken -> POST result:\n');
              theJSON = JSON.parse(d);
-             console.log('---> getMFPPushToken - token_type -> %s', theJSON.token_type);
-             console.log('---> getMFPPushToken - access_token -> %s', theJSON.access_token);
+             console.log('\n\n---> 2 getMFPPushToken - token_type -> %s', theJSON.token_type);
+             console.log('\n\n---> 2 getMFPPushToken - access_token -> %s', theJSON.access_token);
              theResult = '' + theJSON.token_type + ' ' + theJSON.access_token + '';
              //console.log('---> getMFPPushToken - result -> %s', result);
              process.stdout.write(d);
@@ -117,33 +117,42 @@ module.exports = function (theMFPGetPushTokenScopeData,
                    method : theMethode,
                    headers : postheaders
                  };
-                 console.info('---> sendMFPPush --> Options prepared: %s', optionspost.toString());
+                 console.log('\n\n---> 1 sendMFPPush --> Options prepared: %s', optionspost.toString());
 
                  // prepare the POST call using https or http
                  var reqPost = http.request(optionspost, function(res) {
-                     console.log("---> sendMFPPush  --> inner ->  statusCode: ", res.statusCode);
+                     console.log("\n\n---> 1 sendMFPPush  --> inner ->  statusCode: ", res.statusCode);
                      // uncomment it for header details
-                     console.log("---> sendMFPPush  --> inner ->   headers: ", res.headers);
+                     console.log("\n\n---> 1 sendMFPPush  --> inner ->   headers: ", res.headers);
 
                      res.on('data', function(d) {
-                         console.info('---> sendMFPPush  --> inner -> POST result:\n');
+                         console.log('\n\n---> 2 sendMFPPush  --> inner -> POST result:\n');
                          process.stdout.write(d);
-                         console.info('\n\n---> sendMFPPush  --> inner -> POST completed');
+                         console.log('\n\n---> 2 sendMFPPush  --> inner -> POST completed');
+                         theResult = true;
+                         callback(theResult);
                      });
                  });
 
                  // doing the post with the json Push Data
                  reqPost.write(jsonObject);
                  reqPost.end();
-                 theResult = true;
                  reqPost.on('error', function(e) {
-                   console.error(e);
-                   theResult = false;
+                   if(e){
+                     console.log("--> ERROR: %s ", e);
+                     theResult = false;
+                     callback(theResult);
+                   } else {
+                     console.log("--> NO ERROR: %s ", e);
+                     theResult = true;
+                     callback(theResult);
+                   }
                  });
-                 console.log("---> sendMFPPush --> inner -> awarding customer");
-             // -----------------------------------------------------
-             // -----------------------------------------------------
-             console.info('\n\n---> sendMFPPush -> POST completed');
+                 // -----------------------------------------------------
+                 // -----------------------------------------------------
+                 theResult = true;
+                 callback(theResult);
+                 console.info('\n\n---> 3 sendMFPPush -> POST completed');
          });
      });
 
@@ -151,9 +160,15 @@ module.exports = function (theMFPGetPushTokenScopeData,
      reqPost.write(theData);
      reqPost.end();
      reqPost.on('error', function(e) {
-       console.error(e);
-       theResult = false;
-       callback(theResult);
+       if(e){
+         console.log("--> ERROR: %s ", e);
+         theResult = false;
+         callback(theResult);
+       } else {
+         console.log("--> NO ERROR: %s ", e);
+         theResult = true;
+         callback(theResult);
+       }
      });
      callback(theResult);
   }

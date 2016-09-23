@@ -3,11 +3,22 @@
 This project is a sample, how to integrate MFP Push REST API in a Node.js Server.
 I build a Module you can use on you own risk.
 
+The code contains links to information resources which maybe can be relevant to understand
+the implementation.
+
 To show all the dependencies I created a CF Node.js Application on Bluemix and as
 MobileFirst Server I use the MobileFoundation Service on Bluemix.
 
 To get more details on the Topic on MobileFirstFoundation Push Topic, please take a
 look in the Offical documentation https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or other resources like mfp.help.
+
+The module is called ***push*** and you can find in in ***own_modules/push.js***.
+
+The module needs to know several information as parameter for the creation and several parameter
+when the callback function ***sendPush*** is used.
+
+In the git project is a sample Node JS server implementation: how to use the module?
+
 
 ## Run the app locally
 

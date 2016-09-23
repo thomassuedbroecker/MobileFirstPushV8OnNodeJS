@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>NodeJS Starter Application</title>
+    <title>Simple Mobile First Push - NodeJS Application</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,11 +16,30 @@
           <img class = "newappIcon" src="images/newapp-icon.png">
         </td>
         <td>
-          <h1 id="message">Hello World!</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
+          <h1>Welcome to the Simple Mobile First Push Node.JS Server!</h1>
+          <p class='description'></p>Thanks for using this <span class = "blue">Sample NodeJS Application</span>.
         </td>
       </tr>
+   </table>
+   <br>
+   <table border="1" align="center">
+      <tr>
+				<td >
+					<b>Insert your Push Messages</b>
+				</td>
+				<td>
+					<center><input type="text" id="message" value="Your Push Message"></input></center>
+				</td>
+        <td>
+          <center><button type="button" id="button">Send Push Message to MFP Server</button></center>
+        </td>
+			</tr>
     </table>
+    <br>
+    <div id="footer">
+       <center><h1>Thanks for using the sample</h1></center>
+    </div>
   </body>
-
+  <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </html>
