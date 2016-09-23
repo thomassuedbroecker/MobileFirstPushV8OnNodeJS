@@ -57,7 +57,7 @@ app.get('/sendAPush', function(req, res){
     console.log('>>> ******************************************************** ');
     console.log('>>>                  sendAPush                               ');
     console.log('>>> ******************************************************** ');
-    var message = "Hey this is a Push Message form the Node.js Server"
+    var message = "Hey this is a Push Message form the Node.js Server";
     var theResult = "";
     mpfpush.sendPush( mfpAppName,
                       mfpServerHostName,
