@@ -10,7 +10,7 @@ To show all the dependencies, I created a CF Node.js Application with Bluemix an
 MobileFirstFoundation Server I used the MobileFoundation Service on Bluemix.
 
 To get more details on the Topic on MobileFirstFoundation Push Topic, please take a
-look in the Offical documentation https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or other resources like mfp.help.
+look in the Offical documentation https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or other resources like http://mfp.help.
 
 The **node js module** is called ***push*** and you can find in in ***own_modules/push.js***.
 
@@ -19,14 +19,17 @@ when the callback function ***sendPush*** is used.
 
 In the **git project** is a sample _Node JS server_ implementation: How to use the  **push module**?
 
+## Understanding and Overview
+
 This sequence diagram shows the sequence of the usage.
 ![Services in Bluemix](Documentation/pushModuleSequence-2016-09-26_17-05-54.jpg)
 
-This is the sample Node JS app you can us to test the push module.
+This is the sample **Node JS app UI** you can use to test the **push module**.
 ![Node JS Application UI](Documentation/UI-NodeJSApp-2016-09-26_17-05-54.jpg)
 
-The relevant code for setup the module in the **app.js file**
-![The relevant file](https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js)
+### Setup of the Push Module
+The relevant code for setup the **push module** in the **app.js file**
+https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
 
         //******************************************************************************
         // Variables for the Module Usage - Push with MobileFirstFoundation service
@@ -58,6 +61,38 @@ The relevant code for setup the module in the **app.js file**
                                    mfpGetPushTokenScopeCommand,
                                    mfpSendPushPath,
                                    mfpSendPushPathType);
+
+
+### Usage of the Push Module
+The relevant code for setup the **push module** in the **app.js file**
+https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
+
+       /*************************************************
+           Doing Push
+        **************************************************/
+       app.post('/sendPush', function(req, res){
+           console.log('>>> send Push : ' + req);
+           console.log('>>> req.body  : ( %s ) ', JSON.stringify(req.body));
+           var input   = req.body.message;
+           var message = "Hey this is a Push Message form the Node.js Server";
+           if ( req.body.message != undefined ){
+             message = input;
+           }
+           var theResult = JSON.stringify(input);
+
+           pushMFP.sendPush( mfpAppName,
+                             mfpServerHostName,
+                             mfpServerHostHTTPPort,
+                             mfpScopeUser,
+                             mfpScopePW,
+                             message,
+                             function(result){
+             console.log("--> Sending a Push Message: ", message);
+             message = {'result': result};
+             theResult = JSON.stringify(message);
+             res.end(theResult);
+           });
+       });
 
 
 
