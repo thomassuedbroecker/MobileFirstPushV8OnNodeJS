@@ -1,12 +1,12 @@
 # Using MobileFirstFoundation Push Version 8O on a Node JS Server
 
 This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
-I build a Sample Module you can use on you own risk.
+I build a Sample Module and you can use it on you own risk.
 
-The code contains links to information resources which maybe can be relevant to understand
+The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
-To show all the dependencies, I created a CF Node.js Application with Bluemix and as
+To show all the dependencies, I created a **CF Node.js Application with Bluemix** and as
 MobileFirstFoundation Server I used the MobileFoundation Service on Bluemix.
 
 To get more details on the Topic on MobileFirstFoundation Push Topic, please take a
@@ -20,6 +20,7 @@ when the callback function ***sendPush*** is used.
 In the **git project** is a sample _Node JS server_ implementation: How to use the  **push module**?
 
 To use the module you should know, how the MobileFirstFoundation Push Works.
+The focus is only on the **Push Module**.
 
 ---
 ## Understanding and Overview
