@@ -19,6 +19,9 @@ when the callback function ***sendPush*** is used.
 
 In the **git project** is a sample _Node JS server_ implementation: How to use the  **push module**?
 
+To use the module you should know, how the MobileFirstFoundation Push Works.
+
+---
 ## Understanding and Overview
 
 This sequence diagram shows the sequence of the usage.
@@ -27,6 +30,7 @@ This sequence diagram shows the sequence of the usage.
 This is the sample **Node JS app UI** you can use to test the **push module**.
 ![Node JS Application UI](Documentation/UI-NodeJSApp-2016-09-26_17-05-54.jpg)
 
+---
 ### Setup of the Push Module
 The relevant code for setup the **push module** in the **app.js file**
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
@@ -62,7 +66,7 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
                                    mfpSendPushPath,
                                    mfpSendPushPathType);
 
-
+---
 ### Usage of the Push Module
 The relevant code for setup the **push module** in the **app.js file**
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
@@ -93,16 +97,16 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
              res.end(theResult);
            });
        });
-
-
-
-## Run the app locally
+---
+## Run the node.js app on your Bluemix
 
 1. [Install Node.js][]
-2. Download and extract the starter code from the Bluemix UI
+2. Download and extract the **MobileFirstPushV8OnNodeJS** here from github
 3. cd into the app directory
-4. Run `npm install` to install the app's dependencies
-5. Run `npm start` to start the app
-6. Access the running app in a browser at http://localhost:6001
+4. Ensure to deploy into the My Project Region sample US: `cf api https://api.ng.bluemix.net`
+5. Login to your Bluemix Area: `cf login`
+6. Show your existing apps: `cf apps`
+7. Just push the app into your Bluemix Instance: `cf push SampleMFPPushIntegration`
+8. See the logs of your app: `cf logs SampleMFPPushIntegration`
 
 [Install Node.js]: https://nodejs.org/en/download/
