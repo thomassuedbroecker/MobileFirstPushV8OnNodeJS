@@ -1,7 +1,7 @@
 # Using "MobileFirstFoundation Push REST API Version 8" on a Node JS Server
 
 This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
-I build a Sample Module and you can use it on you own risk.
+I build a Sample Module and you can use it, on you ***own risk***.
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
