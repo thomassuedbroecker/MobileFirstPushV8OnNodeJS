@@ -6,8 +6,8 @@ I build a Sample Module and you can use it on you own risk.
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
-To show all the dependencies, I created a **CF Node.js Application with Bluemix** and as
-MobileFirstFoundation Server I used the MobileFoundation Service on Bluemix.
+To show all the dependencies, I created a **CF Node.js Application with Bluemix** and as the
+**MobileFirstFoundation Server** I used the _MobileFoundation Service_ on Bluemix.
 
 To get more details on the Topic on MobileFirstFoundation Push Topic, please take a
 look in the Offical documentation https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or other resources like http://mfp.help.
@@ -28,7 +28,12 @@ The focus is only on the **Push Module**.
 This sequence diagram shows the sequence of the **NodeJS Push Module** usage.
 ![Services in Bluemix](Documentation/pushModuleSequence-2016-09-26_17-05-54.jpg)
 
-This is the sample **Node JS app UI** you can use to test the **push module**.
+This is the sample **Node JS app UI** you can use to test the **Node JS "push module"**.
+
+1. **Insert your message** you want to sendPush
+2. **Press the Button** to send the Push Message
+3. Verify the Push on your MobileApp build with MobileFirstFoundation
+
 ![Node JS Application UI](Documentation/UI-NodeJSApp-2016-09-26_17-05-54.jpg)
 
 ---
