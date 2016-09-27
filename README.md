@@ -6,11 +6,12 @@ The code contains links to information resources, which maybe can be relevant to
 the implementation.
 
 ---
-**THIS SAMPLE DOES NOT INCLUDE A MOBILE APP**, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
+***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
 
-If you do not have a App a very good sample to do this, you can find here: https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
+If you do not have a App a very good sample to do this, you can find here:
+https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
+
 ---
-
 I did the Node.JS APP, because to show all the internal ***NodeJS*** dependencies.
 For the Sample I used a ***CF Node.js Application with Bluemix*** and as the
 ***MobileFirstFoundation Server*** I used the _MobileFoundation Service_ on Bluemix.
