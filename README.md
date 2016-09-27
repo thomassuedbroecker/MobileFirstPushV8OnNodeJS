@@ -5,6 +5,9 @@ I build a Sample Module called ***push*** and you can use it, on you ***own risk
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
+To get a ***fast start*** in Understanding just take a look on this YouTube Video:
+https://www.youtube.com/edit?o=U&video_id=VbSQpY5hOzU
+
 ---
 ***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
 
