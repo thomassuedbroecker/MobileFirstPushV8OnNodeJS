@@ -16,20 +16,21 @@ I did the Node.JS APP, because I want to show all the internal ***NodeJS*** depe
 For this Sample I used a ***CF Node.js Application with Bluemix*** and as the
 ***MobileFirstFoundation Server*** I used the _MobileFoundation Service_ on Bluemix.
 
-I have a existing MobileApp with is registered to this MobileFirstFoundation Server.
+I have a existing MobileFirst Cordova MobileApp which is registered to this MobileFirstFoundation Server.
 
 To get more details on the Topic on ***MobileFirstFoundation Push*** Topic, please take a
 look in the Offical documentation https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or other resources like http://mfp.help.
 
 The ***node js module*** is called ***push*** and you can find it in ***own_modules/push.js***.
 
-The module needs to know several information as parameter for the creation and several parameter
+The module needs to know several information as parameters for the creation and several parameters
 when the callback function ***sendPush*** is used.
 
-In the ***git project*** is a sample _Node JS server_ implementation: How to use the  ***push module***?
+In the ***git project*** is a sample _Node JS server_ implementation:
+How to use the  ***push module***?
 
 To use the module you should know, how the MobileFirstFoundation Push Works.
-The focus is only on the ***Push Module***.
+The focus is **only*** on the ***Push Module***.
 
 ---
 ## Understanding and Overview
