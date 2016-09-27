@@ -26,6 +26,17 @@ The focus is only on the **Push Module**.
 ## Understanding and Overview
 
 This sequence diagram shows the sequence of the **NodeJS Push Module** usage.
+
+The user can insert the message he want to send as Push on the website.
+Inside the Node JS Server the function `app.post('/sendPush', function(req, res)` calls
+the callback function `pushMFP.sendPush( mfpAppName,mfpServerHostName,mfpServerHostHTTPPort,mfpScopeUser,mfpScopePW,message,function(result)` of the **Node JS Push Module**.
+Inside the **node js module** the **MobileFirstFoundation REST API** is used.
+First to get the access token to do the push to the MobileFirstFoundation Server.
+If the a valid token is received, the push will be executed.
+The MobileFirstFoundation Server will check the token and scope, then the server send the push to the
+registered push provider like Apple.
+Apple sends the Push to the MobileApp.
+
 ![Services in Bluemix](Documentation/pushModuleSequence-2016-09-26_17-05-54.jpg)
 
 This is the sample **Node JS app UI** you can use to test the **Node JS "push module"**.
