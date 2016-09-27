@@ -3,6 +3,10 @@
 This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
 I build a Sample Module and you can use it on you own risk.
 
+**THIS SAMPLE DOES NOT INCLUDE A MOBILE APP**, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
+
+If you do not have a App a very good sample to do this, you can find here: https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
+
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
