@@ -5,7 +5,7 @@ I build a Sample Module called ***push*** and you can use it, on you ***own risk
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
-To get a ***fast start*** in Understanding just take a look on this YouTube Video:
+To get a ***fast start*** in Understanding just take a look in this Video on YouTube:
 https://www.youtube.com/edit?o=U&video_id=VbSQpY5hOzU
 
 ---
