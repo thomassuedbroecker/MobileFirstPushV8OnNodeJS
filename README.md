@@ -5,8 +5,13 @@ I build a Sample Module called ***push*** and you can use it, on you ***own risk
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
-To get a ***fast start*** in Understanding just take a look in this Video on YouTube:
-https://www.youtube.com/edit?o=U&video_id=VbSQpY5hOzU
+To get a ***fast start*** in Understanding, just take a look in this Video on YouTube:
+
+<div class="sizer">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/edit?o=U&video_id=VbSQpY5hOzU"></iframe>
+    </div>
+</div>
 
 ---
 ***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
@@ -66,13 +71,13 @@ The relevant code for setup the **push module** in the **app.js file**
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
 
 In the app file you have to configure the following Variables to your needs.
-
+```javascript
         //******************************************************************************
         // Variables for the Module Usage - Push with MobileFirstFoundation service
         var mfpAppName = 'YOUR APPLICATION NAME sample (com.tsuedbro.mytravelblog)';
         var mfpScopeUser = "YOUR SCOPE USER sample (test)";
         var mfpScopePW = "YOUR SCOPE USER PASSWORD  sample (test)";
-        var mfpServerHostName = 'YOUR MFP Server sample";
+        var mfpServerHostName = "YOUR MFP Server sample";
         var mfpServerHostHTTPPort = 80; //'YOUR PORT sample (80)';
         var mfpGetPushTokenPath = '/mfp/api/az/v1/token'; // This is the Tokenpath which will not be changed,
                                                           // for more details take a look in the offical documentation
@@ -97,6 +102,7 @@ In the app file you have to configure the following Variables to your needs.
                                    mfpGetPushTokenScopeCommand,
                                    mfpSendPushPath,
                                    mfpSendPushPathType);
+```
 
 ---
 ### Usage of the Push Module
@@ -107,6 +113,7 @@ callback function of the **Push Module** to send the _Push Message_.
 
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
 
+```javascript
        /*************************************************
            Doing Push
         **************************************************/
@@ -133,6 +140,7 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
              res.end(theResult);
            });
        });
+```
 ---
 ## Run the node.js app on your Bluemix
 
