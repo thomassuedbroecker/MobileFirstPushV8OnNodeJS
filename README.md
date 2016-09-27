@@ -25,7 +25,7 @@ The focus is only on the **Push Module**.
 ---
 ## Understanding and Overview
 
-This sequence diagram shows the sequence of the usage.
+This sequence diagram shows the sequence of the **NodeJS Push Module** usage.
 ![Services in Bluemix](Documentation/pushModuleSequence-2016-09-26_17-05-54.jpg)
 
 This is the sample **Node JS app UI** you can use to test the **push module**.
@@ -35,6 +35,8 @@ This is the sample **Node JS app UI** you can use to test the **push module**.
 ### Setup of the Push Module
 The relevant code for setup the **push module** in the **app.js file**
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
+
+In the app file you have to configure the following Variables to your needs.
 
         //******************************************************************************
         // Variables for the Module Usage - Push with MobileFirstFoundation service
@@ -69,7 +71,11 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
 
 ---
 ### Usage of the Push Module
-The relevant code for setup the **push module** in the **app.js file**
+
+The `app.post('/sendPush', function(req, res)` shows the usage of the **Push Module**.
+You verify the input message, which should be send as a Push and the you use the
+callback function of the **Push Module**.
+
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
 
        /*************************************************
