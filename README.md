@@ -6,12 +6,8 @@ The code contains links to information resources, which maybe can be relevant to
 the implementation.
 
 To get a ***fast start*** in Understanding, just take a look in this Video on YouTube:
+https://www.youtube.com/edit?o=U&video_id=VbSQpY5hOzU
 
-<div class="sizer">
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe src="https://www.youtube.com/edit?o=U&video_id=VbSQpY5hOzU"></iframe>
-    </div>
-</div>
 
 ---
 ***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
@@ -55,7 +51,7 @@ The MobileFirstFoundation Server will check the token and scope, then the server
 registered push provider like Apple.
 Apple sends the Push to the MobileApp.
 
-![Services in Bluemix](Documentation/pushModuleSequence-2016-09-26_17-05-54.jpg)
+![Sequence for the Push on the Node JS Server](https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/Documentation/pushModuleSequence-2016-09-26_17-05-54.jpg)
 
 This is the sample **Node JS app UI** you can use to test the **Node JS "push module"**.
 
@@ -63,7 +59,7 @@ This is the sample **Node JS app UI** you can use to test the **Node JS "push mo
 2. **Press the Button** to send the Push Message
 3. Verify the Push on your MobileApp build with MobileFirstFoundation
 
-![Node JS Application UI](Documentation/UI-NodeJSApp-2016-09-26_17-05-54.jpg)
+![Node JS Application UI](https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/Documentation/UI-NodeJSApp-2016-09-26_17-05-54.jpg)
 
 ---
 ### Setup of the Push Module
