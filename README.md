@@ -20,7 +20,7 @@ I have a existing MobileApp with is registered to this MobileFirstFoundation Ser
 To get more details on the Topic on ***MobileFirstFoundation Push*** Topic, please take a
 look in the Offical documentation https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or other resources like http://mfp.help.
 
-The ***node js module*** is called ***push*** and you can find in in ***own_modules/push.js***.
+The ***node js module*** is called ***push*** and you can find it in ***own_modules/push.js***.
 
 The module needs to know several information as parameter for the creation and several parameter
 when the callback function ***sendPush*** is used.
