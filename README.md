@@ -1,19 +1,19 @@
 # Using "MobileFirstFoundation Push REST API Version 8" on a Node JS Server
 
 This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
-I build a Sample Module and you can use it, on you ***own risk***.
+I build a Sample Module called ***push*** and you can use it, on you ***own risk***.
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
 ---
 ***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
 
-If you do not have a App a very good sample to do this, you can find here:
+If you do not have a App, a _very good_ sample to do this, you can find here:
 https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
 
 ---
-I did the Node.JS APP, because to show all the internal ***NodeJS*** dependencies.
-For the Sample I used a ***CF Node.js Application with Bluemix*** and as the
+I did the Node.JS APP, because I want to show all the internal ***NodeJS*** dependencies.
+For this Sample I used a ***CF Node.js Application with Bluemix*** and as the
 ***MobileFirstFoundation Server*** I used the _MobileFoundation Service_ on Bluemix.
 
 I have a existing MobileApp with is registered to this MobileFirstFoundation Server.
