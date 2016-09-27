@@ -1,4 +1,4 @@
-# Using MobileFirstFoundation Push Version 8O on a Node JS Server
+# Using "MobileFirstFoundation Push REST API Version 8" on a Node JS Server
 
 This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
 I build a Sample Module and you can use it on you own risk.
@@ -73,8 +73,8 @@ In the app file you have to configure the following Variables to your needs.
 ### Usage of the Push Module
 
 The `app.post('/sendPush', function(req, res)` shows the usage of the **Push Module**.
-You verify the input message, which should be send as a Push and the you use the
-callback function of the **Push Module**.
+In this function you verify the input message, which should be send as a Push and the you use the
+callback function of the **Push Module** to send the _Push Message_.
 
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
 
@@ -110,10 +110,11 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
 1. [Install Node.js][]
 2. Download and extract the **MobileFirstPushV8OnNodeJS** here from github
 3. cd into the app directory
-4. Ensure to deploy into the My Project Region sample US: `cf api https://api.ng.bluemix.net`
-5. Login to your Bluemix Area: `cf login`
-6. Show your existing apps: `cf apps`
-7. Just push the app into your Bluemix Instance: `cf push SampleMFPPushIntegration`
-8. See the logs of your app: `cf logs SampleMFPPushIntegration`
+4. Do the needed customization of the variables in the **app.js** file, you can find in **Setup of the Push Module**.
+5. Ensure to deploy into the My Project Region sample US: `cf api https://api.ng.bluemix.net`
+6. Login to your Bluemix Area: `cf login`
+7. Show your existing apps: `cf apps`
+8. Just push the app into your Bluemix Instance: `cf push SampleMFPPushIntegration`
+9. See the logs of your app: `cf logs SampleMFPPushIntegration`
 
 [Install Node.js]: https://nodejs.org/en/download/
