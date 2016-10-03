@@ -6,7 +6,9 @@ The code contains links to information resources, which maybe can be relevant to
 the implementation.
 
 To get a ***fast start*** in Understanding, just take a look in this Video on YouTube:
-https://www.youtube.com/edit?o=U&video_id=VbSQpY5hOzU
+https://www.youtube.com/watch?v=VbSQpY5hOzU
+
+and here https://youtu.be/mrpHAvKCe2U
 
 
 ---
