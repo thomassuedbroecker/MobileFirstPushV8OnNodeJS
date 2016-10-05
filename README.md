@@ -7,7 +7,6 @@ the implementation.
 
 To get a ***fast start*** in Understanding, just take a look in this Video on YouTube:
 https://www.youtube.com/watch?v=VbSQpY5hOzU
-
 and here https://youtu.be/mrpHAvKCe2U
 
 
@@ -41,13 +40,59 @@ The focus is **only*** on the ***Push Module***.
 ---
 ## Understanding and Overview
 
+This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
+
+I build a Sample Module called ***push*** and you can use it, on your ***own risk***.
+The code contains links to information resources, which maybe can be relevant to understand
+the implementation.
+
+To get a ***fast start*** in Understanding just take a look in these Videos on YouTube:
+
+Here is the Link to the github project:
+
+<div class="sizer">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/watch?v=VbSQpY5hOzU"></iframe>
+    </div>
+</div>
+
+Link to the github project: https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS
+
+---
+***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
+
+If you do not have a App, a _very good_ sample to do this, you can find here:
+https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
+
+---
+I did the Node.JS APP, because I want to show all the internal ***NodeJS*** dependencies.
+To realize this I build the Sample on ***CF Node.js Application with Bluemix*** and I used as
+***MobileFirstFoundation Server*** the _MobileFoundation Service_ on Bluemix.
+
+I already have a existing MobileFirst Cordova MobileApp, which has a working push functionality and the app is registered this MobileFirstFoundation Server on Bluemix.
+
+To get more details of the Topic of ***MobileFirstFoundation Push*** , please take a
+look in the offical documentation here https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or use other resources like http://mfp.help.
+
+The ***node js module*** I build, I call ***push***:
+You can find the module in ***own_modules/push.js***.
+
+The module needs parameters when you create a instance and needs several parameters, when you use the callback function ***sendPush***.
+
+The ***git project*** contains a  _Node JS server_ implementation, to show how to use the  ***push module***?
+
+If you use the module, you should know, how the MobileFirstFoundation Push Works. The focus here is **only*** on the ***Push Module***.
+
+---
+## Understanding and Overview
+
 This sequence diagram shows the sequence of the **NodeJS Push Module** usage.
 
-The user can insert the message he want to send as Push on the website.
-Inside the Node JS Server the function `app.post('/sendPush', function(req, res)` calls
+The user can insert the message, he want to send as a Push, on the website.
+The Node JS Server function `app.post('/sendPush', function(req, res)` calls
 the callback function `pushMFP.sendPush( mfpAppName,mfpServerHostName,mfpServerHostHTTPPort,mfpScopeUser,mfpScopePW,message,function(result)` of the **Node JS Push Module**.
 Inside the **node js module** the **MobileFirstFoundation REST API** is used.
-First to get the access token to do the push to the MobileFirstFoundation Server.
+The First tasks is to get the access token, to do the push to the MobileFirstFoundation Server.
 If the a valid token is received, the push will be executed.
 The MobileFirstFoundation Server will check the token and scope, then the server send the push to the
 registered push provider like Apple.
@@ -106,8 +151,8 @@ In the app file you have to configure the following Variables to your needs.
 ### Usage of the Push Module
 
 The `app.post('/sendPush', function(req, res)` shows the usage of the **Push Module**.
-In this function you verify the input message, which should be send as a Push and the you use the
-callback function of the **Push Module** to send the _Push Message_.
+This POST server function does verify the input message, which should be send as a Push and the
+callback function of the **Push Module** be utilized to send the _Push Message_.
 
 https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.js
 
@@ -141,6 +186,8 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
 ```
 ---
 ## Run the node.js app on your Bluemix
+
+Here a small guide how to setup the NodeJS Server project on bluemix.
 
 1. [Install Node.js][]
 2. Download and extract the **MobileFirstPushV8OnNodeJS** here from github
