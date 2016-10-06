@@ -9,7 +9,6 @@ To get a ***fast start*** in Understanding, just take a look in this Video on Yo
 https://www.youtube.com/watch?v=VbSQpY5hOzU
 and here https://youtu.be/mrpHAvKCe2U
 
-
 ---
 ***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
 
@@ -35,53 +34,7 @@ In the ***git project*** is a sample _Node JS server_ implementation:
 How to use the  ***push module***?
 
 To use the module you should know, how the MobileFirstFoundation Push Works.
-The focus is **only*** on the ***Push Module***.
-
----
-## Understanding and Overview
-
-This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
-
-I build a Sample Module called ***push*** and you can use it, on your ***own risk***.
-The code contains links to information resources, which maybe can be relevant to understand
-the implementation.
-
-To get a ***fast start*** in Understanding just take a look in these Videos on YouTube:
-
-Here is the Link to the github project:
-
-<div class="sizer">
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe src="https://www.youtube.com/watch?v=VbSQpY5hOzU"></iframe>
-    </div>
-</div>
-
-Link to the github project: https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS
-
----
-***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
-
-If you do not have a App, a _very good_ sample to do this, you can find here:
-https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
-
----
-I did the Node.JS APP, because I want to show all the internal ***NodeJS*** dependencies.
-To realize this I build the Sample on ***CF Node.js Application with Bluemix*** and I used as
-***MobileFirstFoundation Server*** the _MobileFoundation Service_ on Bluemix.
-
-I already have a existing MobileFirst Cordova MobileApp, which has a working push functionality and the app is registered this MobileFirstFoundation Server on Bluemix.
-
-To get more details of the Topic of ***MobileFirstFoundation Push*** , please take a
-look in the offical documentation here https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/ or use other resources like http://mfp.help.
-
-The ***node js module*** I build, I call ***push***:
-You can find the module in ***own_modules/push.js***.
-
-The module needs parameters when you create a instance and needs several parameters, when you use the callback function ***sendPush***.
-
-The ***git project*** contains a  _Node JS server_ implementation, to show how to use the  ***push module***?
-
-If you use the module, you should know, how the MobileFirstFoundation Push Works. The focus here is **only*** on the ***Push Module***.
+The focus is ***only*** on the ***Push Module***.
 
 ---
 ## Understanding and Overview
