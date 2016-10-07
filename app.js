@@ -15,16 +15,18 @@ var cfenv = require('cfenv');
 
 //******************************************************************************
 // Variables for the Module Usage - Push with MobileFirstFoundation service
-var mfpAppName = 'com.tsuedbro.mytravelblog';//'YOUR APPLICATION NAME sample (com.tsuedbro.mytravelblog)';
+// var mfpAppName = 'com.tsuedbro.mytravelblog';//'YOUR APPLICATION NAME sample (com.tsuedbro.mytravelblog)';
+var mfpAppName = 'com.ibm.gackerman.mfp.push';
 var mfpScopeUser = "test"; //"YOUR SCOPE USER sample (test)";
 var mfpScopePW = "test";//"YOUR SCOPE USER PASSWORD  sample (test)";
-var mfpServerHostName = 'mobilefoundation-tsuedbro-xv-server.mybluemix.net';//'YOUR MFP Server sampe (mobilefoundation-server.mybluemix.net)';
+var mfpServerHostName = 'mobilefoundation-tsuedbro-server.mybluemix.net';//'YOUR MFP Server sampe (mobilefoundation-server.mybluemix.net)';
 var mfpServerHostHTTPPort = 80; //'YOUR PORT sample (80)';
 var mfpGetPushTokenPath = '/mfp/api/az/v1/token'; // This is the Tokenpath which will not be changed,
                                                   // for more details take a look in the offical documentation
 var mfpGetPushTokenScopeCommand = '+messages.write'; // This command will mostlikly not be changed,
                                                      // for more details take a look in the offical documentation
-var mfpGetPushTokenScopeApp = "push.application.";//'YOUR DEFINITION FOR THE SCOPE sample (push.application.)';
+var mfpGetPushTokenScopeApp = "push.application.";   // This command will mostlikly not be changed,
+                                                     // for more details take a look in the offical documentation
 var mfpGetPushTokenScopeData = "grant_type=client_credentials&scope="; // This command will mostlikly not be changed,
                                                                        // for more details take a look in the offical documentation
 
