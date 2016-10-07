@@ -18,11 +18,10 @@ var cfenv = require('cfenv');
 var mfpAppName = 'com.tsuedbro.mytravelblog';//'YOUR APPLICATION NAME sample (com.tsuedbro.mytravelblog)';
 var mfpScopeUser = "test"; //"YOUR SCOPE USER sample (test)";
 var mfpScopePW = "test";//"YOUR SCOPE USER PASSWORD  sample (test)";
-var mfpServerHostName = 'mobilefoundation-tsuedbro-server.mybluemix.net';//'YOUR MFP Server sampe (mobilefoundation-server.mybluemix.net)';
+var mfpServerHostName = 'mobilefoundation-tsuedbro-xv-server.mybluemix.net';//'YOUR MFP Server sampe (mobilefoundation-server.mybluemix.net)';
 var mfpServerHostHTTPPort = 80; //'YOUR PORT sample (80)';
 var mfpGetPushTokenPath = '/mfp/api/az/v1/token'; // This is the Tokenpath which will not be changed,
                                                   // for more details take a look in the offical documentation
-var mfpGetPushTokenScopeApp = 'push.application.';
 var mfpGetPushTokenScopeCommand = '+messages.write'; // This command will mostlikly not be changed,
                                                      // for more details take a look in the offical documentation
 var mfpGetPushTokenScopeApp = "push.application.";//'YOUR DEFINITION FOR THE SCOPE sample (push.application.)';

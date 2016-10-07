@@ -5,9 +5,9 @@ I build a Sample Module called ***push*** and you can use it, on you ***own risk
 The code contains links to information resources, which maybe can be relevant to understand
 the implementation.
 
-To get a ***fast start*** in Understanding, just take a look in this Video on YouTube:
-https://www.youtube.com/watch?v=VbSQpY5hOzU
-and here https://youtu.be/mrpHAvKCe2U
+To get a ***fast start*** in Understanding, just take a look in these Videos I made on YouTube for this sample:
+a) Using the Push Module: https://www.youtube.com/watch?v=VbSQpY5hOzU
+b) Configure the Push on the MobileFirstSerber: https://youtu.be/mrpHAvKCe2U
 
 ---
 ***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
@@ -77,7 +77,6 @@ In the app file you have to configure the following Variables to your needs.
         var mfpServerHostHTTPPort = 80; //'YOUR PORT sample (80)';
         var mfpGetPushTokenPath = '/mfp/api/az/v1/token'; // This is the Tokenpath which will not be changed,
                                                           // for more details take a look in the offical documentation
-        var mfpGetPushTokenScopeApp = 'push.application.';
         var mfpGetPushTokenScopeCommand = '+messages.write'; // This command will mostlikly not be changed,
                                                              // for more details take a look in the offical documentation
         var mfpGetPushTokenScopeApp = "push.application.";//'YOUR DEFINITION FOR THE SCOPE sample (push.application.)';
@@ -151,5 +150,7 @@ Here a small guide how to setup the NodeJS Server project on bluemix.
 7. Show your existing apps: `cf apps`
 8. Just push the app into your Bluemix Instance: `cf push SampleMFPPushIntegration`
 9. See the logs of your app: `cf logs SampleMFPPushIntegration`
+
+_NOTE:_ If you want to check the push configuration on the MObileFirst Server please take a look in this video:
 
 [Install Node.js]: https://nodejs.org/en/download/
