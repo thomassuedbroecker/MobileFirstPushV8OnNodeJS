@@ -7,7 +7,7 @@ the implementation.
 
 To get a ***fast start*** in Understanding, just take a look in these Videos I made on YouTube for this sample:
 a) Using the Push Module: https://www.youtube.com/watch?v=VbSQpY5hOzU
-b) Configure the Push on the MobileFirstSerber: https://youtu.be/mrpHAvKCe2U
+b) Configure the Push on the MobileFirstServer: https://youtu.be/mrpHAvKCe2U
 
 ---
 ***THIS SAMPLE DOES NOT INCLUDE A MOBILE APP***, I do expect you have a MobileApp with a working push MobileFirstFoundation configuration.
@@ -141,6 +141,7 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
 
 Here a small guide how to setup the NodeJS Server project on bluemix.
 
+
 1. [Install Node.js][]
 2. Download and extract the **MobileFirstPushV8OnNodeJS** here from github
 3. cd into the app directory
@@ -151,6 +152,17 @@ Here a small guide how to setup the NodeJS Server project on bluemix.
 8. Just push the app into your Bluemix Instance: `cf push SampleMFPPushIntegration`
 9. See the logs of your app: `cf logs SampleMFPPushIntegration`
 
-_NOTE:_ If you want to check the push configuration on the MObileFirst Server please take a look in this video:
+_NOTE:_
+
+1. If you want to check the push configuration on the MobileFirst Server please take a look in this video:
+https://youtu.be/mrpHAvKCe2U
+
+2. ***IMPORTANT for usage of the sample NodeJS App:*** When you use the sample application ***DO NOT USE*** the ***HTTPS*** to call the application in your browser!
+You must use: ***http://samplemfppushintegration.mybluemix.net/*** and not ***HTTPS://*** samplemfppushintegration.mybluemix.net/ .
+The reason is I did not implement the security in my WebApp to access the resoures of the Node.JS server on Bluemix.
+
+How to do this maybe this could be a good access point to figure out, how to do that: https://developer.ibm.com/answers/questions/17567/cannot-access-resource-from-bluemix.html
+
+
 
 [Install Node.js]: https://nodejs.org/en/download/
