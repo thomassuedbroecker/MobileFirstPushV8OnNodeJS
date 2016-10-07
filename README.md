@@ -6,6 +6,7 @@ The code contains links to information resources, which maybe can be relevant to
 the implementation.
 
 To get a ***fast start*** in Understanding, just take a look in these Videos I made on YouTube for this sample:
+
 1. Using the _Push Module_ : https://www.youtube.com/watch?v=VbSQpY5hOzU
 2. Register App and configure the Push on the MobileFirstFoundationServer: https://youtu.be/mrpHAvKCe2U
 
