@@ -152,7 +152,7 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
 ## Run the node.js app on your Bluemix
 
 Here a _small guide_ (not all steps in detail) how to setup the NodeJS Server project on bluemix.
-When you deploy the NodeJS Application into your Bluemix area the NodeJS application will automatically created.
+When you deploy the NodeJS Application into your Bluemix area the NodeJS application will automatically be created.
 
 1. Get yourself a Bluemix Account – register at bluemix.net
 2. [Install Node.js][] local
