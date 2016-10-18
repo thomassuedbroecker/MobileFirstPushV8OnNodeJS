@@ -24,6 +24,7 @@ If you do not have a App, a _very good_ sample to do this, you can find here:
 https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
 
 _NOTE:_ When you use this sample, please do not forget to add the **push.mobileclient** scope to mandatory scope section.
+
 ![Mandatory Scope](https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/Documentation/scope_mobilepush.png)
 
 ---
