@@ -164,7 +164,8 @@ Here a small guide how to setup the NodeJS Server project on bluemix.
 10. How to setup the Mobile Foundation Service on Bluemix follow the steps here: https://new-console.ng.bluemix.net/docs/services/mobilefoundation/index.html
 11. To building a sample mobile app using MobileFirstFoundation Push follow the steps in this sample: https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
 
-_NOTE:_ When you use this sample, please do not forget to add the **push.mobileclient** scope to mandatory scope section.
+_NOTE:_ When you use this sample, please do not forget to add the **push.mobileclient** scope to mandatory application scope section.
+
 ![Mandatory Scope](https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/Documentation/scope_mobilepush.png)
 
 _NOTE: Know Issues_
