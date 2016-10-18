@@ -150,19 +150,21 @@ https://github.com/thomassuedbroecker/MobileFirstPushV8OnNodeJS/blob/master/app.
 ---
 ## Run the node.js app on your Bluemix
 
-Here a small guide how to setup the NodeJS Server project on bluemix.
+Here a _small guide_ (not all steps in detail) how to setup the NodeJS Server project on bluemix.
+When you deploy the NodeJS Application into your Bluemix area the NodeJS application will automatically created.
 
-1. [Install Node.js][]
-2. Download and extract the **MobileFirstPushV8OnNodeJS** here from github
-3. cd into the app directory
-4. Do the needed customization of the variables in the **app.js** file, you can find in **Setup of the Push Module**.
-5. Ensure to deploy into the My Project Region sample US: `cf api https://api.ng.bluemix.net`
-6. Login to your Bluemix Area: `cf login`
-7. Show your existing apps: `cf apps`
-8. Just push the app into your Bluemix Instance: `cf push SampleMFPPushIntegration`
-9. See the logs of your app: `cf logs SampleMFPPushIntegration`
-10. How to setup the Mobile Foundation Service on Bluemix follow the steps here: https://new-console.ng.bluemix.net/docs/services/mobilefoundation/index.html
-11. To building a sample mobile app using MobileFirstFoundation Push follow the steps in this sample: https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
+1. Get yourself a Bluemix Account – register at bluemix.net
+2. [Install Node.js][] local
+3. Download and extract the **MobileFirstPushV8OnNodeJS** here from github
+4. cd into the app directory on your machine **./MobileFirstPushV8OnNodeJS/**
+5. Do the needed customization of the variables in the **app.js** file, you can find in the section **Setup of the Push Module**.
+6. Ensure you deploy into your **My Project Region** here in my sample it is the US: `cf api https://api.ng.bluemix.net`
+7. Login to your Bluemix Area: `cf login`
+8. Show your existing apps: `cf apps`
+9. Just push the app into your Bluemix Instance: `cf push SampleMFPPushIntegration`
+10. See the logs of your app: `cf logs SampleMFPPushIntegration`
+11. How to setup the Mobile Foundation Service on Bluemix follow the steps here: https://new-console.ng.bluemix.net/docs/services/mobilefoundation/index.html
+12. To building a sample mobile app using MobileFirstFoundation Push follow the steps in this sample: https://github.com/MobileFirst-Platform-Developer-Center/PushNotificationsCordova/tree/release80
 
 _NOTE:_ When you use this sample, please do not forget to add the **push.mobileclient** scope to mandatory application scope section.
 
