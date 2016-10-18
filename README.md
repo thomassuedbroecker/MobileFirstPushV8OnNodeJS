@@ -4,7 +4,7 @@ It is nice and easy to send simple push notifications in MobileFirst Foundation 
 
 To that end, I've implemented a mobile application that integrates several Bluemix services related to IoT, Watson services and so on.
 
-Getting the Authorization key with Postman is not flexible enough, so instead I wrote a self-Authorization node.js module. This module enables me to easily create different instances on one or more Node.js servers.
+Getting the Authorization key with Postman is not flexible enough, so instead I wrote a self-Authorization node.js module. This module enables me to easily create different instances of the module inside one or more Node.js servers.
 
 
 This project is a sample: _How to integrate MFP Push REST API in a Node.js Server?_
@@ -173,7 +173,7 @@ _NOTE:_ When you use this sample, please do not forget to add the **push.mobilec
 
 _NOTE: Know Issues_
 
-1. If you want to check the push configuration on the MobileFirstServer please take a look in this video:
+1. If you want to check the push configuration on the MobileFirstServer, please take a look in this video:
 https://youtu.be/mrpHAvKCe2U In this video I show, how I did a setup of my sample MobileApp.
 
 2. ***IMPORTANT for usage of the sample NodeJS App:*** When you use the sample NodeJS application ***DO NOT USE*** the ***HTTPS*** to call the application website in your browser!
